@@ -5,23 +5,42 @@
     </head>
     <body>
         Let's play Madlibs!
+        <p></p>
         <form action="/madlib">
             <div>
                 <label for="person">Name a person.</label>
-                <input type="text" name="person" id="person">
+                <select name="person">
+                    <option value="Elmo">Elmo</option>
+                    <option value="Bill Gates">Bill Gates</option>
+                    <option value="June">June</option>
+                    <option value="Hermione">Hermione</option>
+                </select>
             </div>
             <div>
-                <label for="color">Name a color.</label>
-                <input type="text" name="color" id="color">
+                <label for="color">Choose a color.</label>
+                <input type="radio" name="color" value="burgundy">
+                <label>Burgundy</label>
+                <input type="radio" name="color" id="aquamarine">
+                <label>Aquamarine</label>
+                <input type="radio" name="color" id="goldenrod">
+                <label>Goldenrod</label>
             </div>
             <div>
-                <label for="noun">Name a noun.</label>
+                <label for="noun">Choose a noun.</label>
                 <input type="text" name="noun" id="noun">
             </div>
             <div>
-                <label for="adjective">Name an adjective.</label>
-                <input type="text" name="adjective" id="adjective">
+                <label for="adjective">Choose one or more adjectives.</label>
+                <input type="checkbox" name="adjective" value="hairy">
+                <label>hairy</label>
+                <input type="checkbox" name="adjective" value="tubular">
+                <label>tubular</label>
+                <input type="checkbox" name="adjective" value="splendid">
+                <label>splendid</label>
+                <input type="checkbox" name="adjective" value="distraught">
+                <label>distraught</label>
             </div>
+            <p></p>
                 <input type='submit'>
         </form>
     </body>
